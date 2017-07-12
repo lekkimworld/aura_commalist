@@ -1,0 +1,43 @@
+<project name="ITC" basedir="." default="checkDeployQA" xmlns:sf="antlib:com.salesforce">
+	
+	<property file="build.properties" />
+	
+	<property environment="env" />
+
+	<taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <pathelement location="${env.SALESFORCE_ANT_HOME}/ant-salesforce.jar" />
+        </classpath>
+    </taskdef>
+	
+	<target name="retrieve">
+		<sf:retrieve
+			username="${sf.uqa}" 
+			password="${sf.pqa}"
+			serverurl="${sf.serverSandboxURLQA}"
+			retrieveTarget="target"
+			unpackaged="retrievePackage.xml"
+		/>
+	</target>
+	<target name="check">
+		<sf:deploy
+			username="${sf.uqa}" 
+			password="${sf.pqa}"
+			serverurl="${sf.serverSandboxURLQA}"
+			deployRoot="target"
+			rollbackOnError="true"
+			checkOnly="true" 
+		/>
+	</target>
+	<target name="deploy">
+		<sf:deploy
+			username="${sf.uqa}" 
+			password="${sf.pqa}"
+			serverurl="${sf.serverSandboxURLQA}"
+			deployRoot="target"
+			rollbackOnError="true"
+			checkOnly="false"
+		/>
+	</target>
+	
+</project>

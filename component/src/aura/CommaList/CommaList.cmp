@@ -1,4 +1,4 @@
-<aura:component >
+<aura:component>
     <aura:handler name="change" value="{!v.data}" action="{!c.dataChanged}" />
     <aura:attribute name="data" type="Object" access="PUBLIC" />
     <aura:attribute name="noneFound" type="String" default="None found" access="PUBLIC" />

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CommaListExample</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>CommaListExample</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>CommaListExample</members>
+        <name>FlexiPage</name>
+    </types>
+    <version>39.0</version>
+</Package>

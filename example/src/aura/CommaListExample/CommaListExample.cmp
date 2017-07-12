@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    <aura:attribute name="strings" type="String[]" access="PRIVATE" />
+    <aura:attribute name="objects" type="Object[]" access="PRIVATE" />
+    
+    <div class="slds-m-top--small">
+        <div class="title">Strings</div>
+        <c:CommaList data="{!v.strings}" />
+    </div>
+    
+    <div class="slds-m-top--small">
+        <div class="title">Objects, no path</div>
+        <c:CommaList data="{!v.objects}" />
+    </div>
+    
+    <div class="slds-m-top--small">
+        <div class="title">Objects, path, no link</div>
+        <c:CommaList data="{!v.objects}" displayTextPath="Name" />
+    </div>
+    
+    <div class="slds-m-top--small">
+        <div class="title">Objects, path, link</div>
+        <c:CommaList data="{!v.objects}" displayTextPath="Link" idPath="Link" />
+    </div>
+    
+    <div class="slds-m-top--small">
+        <div class="title">Objects, path, link path</div>
+        <c:CommaList data="{!v.objects}" displayTextPath="Name" idPath="Child.Link" />
+    </div>
+</aura:component>
