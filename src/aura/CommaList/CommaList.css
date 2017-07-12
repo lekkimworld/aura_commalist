@@ -1,0 +1,11 @@
+.THIS {
+}
+.THIS.inline-list li {
+    display: inline;
+}
+.THIS.inline-list li:after {
+    content: ", ";
+}
+.THIS.inline-list li:last-child:after {
+    content: "";
+}
