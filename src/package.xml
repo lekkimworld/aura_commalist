@@ -2,6 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>CommaListExample</members>
+        <members>CommaList</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -11,6 +12,10 @@
     <types>
         <members>CommaListExample</members>
         <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>CommaListController</members>
+        <name>ApexClass</name>
     </types>
     <version>39.0</version>
 </Package>

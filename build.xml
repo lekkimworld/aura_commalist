@@ -24,7 +24,7 @@
 			username="${sf.uqa}" 
 			password="${sf.pqa}"
 			serverurl="${sf.serverSandboxURLQA}"
-			deployRoot="target"
+			deployRoot="src"
 			rollbackOnError="true"
 			checkOnly="true" 
 		/>
@@ -34,7 +34,7 @@
 			username="${sf.uqa}" 
 			password="${sf.pqa}"
 			serverurl="${sf.serverSandboxURLQA}"
-			deployRoot="target"
+			deployRoot="src"
 			rollbackOnError="true"
 			checkOnly="false"
 		/>
