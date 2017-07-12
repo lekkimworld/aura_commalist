@@ -4,4 +4,5 @@
         <members>CommaList</members>
         <name>AuraDefinitionBundle</name>
     </types>
+    <version>39.0</version>
 </Package>
